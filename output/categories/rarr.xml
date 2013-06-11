@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Trust Rachel (rarr)</title><link>http://trustrachel.com</link><description>I totally know what I'm doing</description><lastBuildDate>Tue, 11 Jun 2013 01:12:27 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Test post</title><link>http://trustrachel.com/test-post.html</link><description>&lt;!-- link: --&gt;
+&lt;!-- description: --&gt;
+&lt;!-- tags: rarr,foo,blarg --&gt;
+&lt;!-- date: 2013/06/11 00:43:28 --&gt;
+&lt;!-- title: Test post --&gt;
+&lt;!-- slug: test-post --&gt;
+&lt;p&gt;This is a test of the emergency post system. This is only a test.&lt;/p&gt;</description><category>rarr</category><category>foo</category><category>blarg</category><guid>http://trustrachel.com/test-post.html</guid><pubDate>Tue, 11 Jun 2013 07:43:28 GMT</pubDate></item></channel></rss>
