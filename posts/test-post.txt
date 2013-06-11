@@ -1,0 +1,8 @@
+.. link: 
+.. description: 
+.. tags: rarr,foo,blarg
+.. date: 2013/06/11 00:43:28
+.. title: Test post
+.. slug: test-post
+
+This is a test of the emergency post system. This is only a test.
