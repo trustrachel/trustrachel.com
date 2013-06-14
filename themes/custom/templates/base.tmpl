@@ -14,6 +14,7 @@ ${set_locale(lang)}
     ${extra_head_data}
 </head>
 <body>
+
   <%block name="header">${base_helper.header()}</%block>
   <%block name="content_block">
 
@@ -28,10 +29,38 @@ ${set_locale(lang)}
                 <div class="span4 pull-left">
                     <div id="sidebar">
                         <img src="/assets/images/rachel.jpeg" alt="Rachel Sanders" />
-                        <p id="headline">I am a senior software engineer at LinkedIn, co-founder of SFPyLadies, and #MSL NASA Tweetup alum. 
+                        <p id="headline">I'm a staff software engineer at LinkedIn, co-founder of <a href="http://www.meetup.com/PyLadiesSF/">SF PyLadies</a>, and <a href="http://www.flickr.com/photos/nasahqphoto/7721165576/">#MSL NASA Tweetup</a> alum. 
                         Opinions here are my own.</p>
                         
                         <ul class="unstyled">
+
+                            <li id="social-media">
+                                <h3>Find Me On</h3>
+                                <ul class="unstyled inline">
+                                    <li class="twitter">
+                                        <a href="http://twitter.com/trustrachel">Twitter</a>
+                                    </li>
+                                    <li class="fb">
+                                        <a href="">Facebook</a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="http://linkedin.com/in/rachelasanders">LinkedIn</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            %if recent_posts:
+                            <li class="articles">
+                                <h3>Recent Posts</h3>
+                                <ul class="unstyled">
+                                    %for post in recent_posts:
+                                    <li>
+                                        <a href="${post.permalink()}"">${post.title()}</a>
+                                    </li>
+                                    %endfor
+                                </ul>
+                            </li>
+                            %endif 
 
                             %if popular_tags:
                             <li class="articles">
@@ -59,51 +88,6 @@ ${set_locale(lang)}
                             </li>
                             %endif 
 
-                            <li id="social-media">
-                                <h3>Find Me On</h3>
-                                <ul class="unstyled inline">
-                                    <li class="twitter">
-                                        <a href="">Twitter</a>
-                                    </li>
-                                    <li class="fb">
-                                        <a href="">Facebook</a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="">LinkedIn</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            %if recent_posts:
-                            <li class="articles">
-                                <h3>Recent Posts</h3>
-                                <ul class="unstyled">
-                                    %for post in recent_posts:
-                                    <li>
-                                        <a href="${post.permalink()}"">${post.title()}</a>
-                                    </li>
-                                    %endfor
-                                </ul>
-                            </li>
-                            %endif 
-
-                            <li class="articles">
-                                <h3>Recent Projects</h3>
-                                <ul class="unstyled">
-                                    <li>
-                                        <a href="">Flask v. Django</a>
-                                    </li>
-                                    <li>
-                                        <a href="">I’m in the new Mars Rover documentary!</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Flask v. Django</a>
-                                    </li>
-                                    <li>
-                                        <a href="">I’m in the new Mars Rover documentary!</a>
-                                    </li>
-                                </ul>
-                            </li>
                         </ul>
                     </div>
                 </div>

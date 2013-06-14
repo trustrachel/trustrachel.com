@@ -60,16 +60,16 @@
                     <nav class="span8">
                         <ul class="unstyled inline">
                             <li>
-                                <a href="${rel_link(permalink, '/about.html')}">About</a>
+                                <a href="${_link('archive')}">Archive</a>
                             </li>
                             <li>
-                                <a href="${rel_link(permalink, '/contact.html')}">Contact</a>
+                                <a href="${_link('post', 'stories/about')}">About</a>
                             </li>
                             <li>
-                                <a href="${_link('archive', None)}">Archive</a>
+                                <a href="${_link('post', 'stories/contact')}">Contact</a>
                             </li>
                             <li>
-                                <a href="">Menu2</a>
+                                <a href="${_link('post', 'stories/projects')}">Projects</a>
                             </li>
                         </ul>
                     </nav>

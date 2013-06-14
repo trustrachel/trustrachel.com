@@ -5,11 +5,12 @@
 <%namespace name="article" file="post_helper.tmpl"/>
 <%inherit file="base.tmpl"/>
 <%block name="content">
+<div id="main">
  % if posts:
  <ul class="unstyled">
     <li>
     % for post in posts:
-      ${article.render(post)}   
+      ${article.render_preview(post)}   
     % endfor
     </li>
   </ul>
@@ -17,4 +18,5 @@
     ${helper.html_pager()}
     ${disqus.html_disqus_script()}
     ${helper.mathjax_script(post)}
+</div>
 </%block>
