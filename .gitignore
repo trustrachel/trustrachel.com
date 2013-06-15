@@ -1,6 +1,7 @@
 *.py[cod]
 
 cache/*
+.doit.db.db
 
 # C extensions
 *.so
