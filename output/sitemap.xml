@@ -5,18 +5,18 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>http://trustrachel.com</loc>
-  <lastmod>2013-06-26</lastmod>
+  <loc>http://trustrachel.com/</loc>
+  <lastmod>2013-06-27</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/2013/</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-27</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/2013/06/</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-27</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -46,7 +46,7 @@
  </url>
  <url>
   <loc>http://trustrachel.com/categories/</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-27</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -76,7 +76,7 @@
  </url>
  <url>
   <loc>http://trustrachel.com/galleries/</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-27</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -85,13 +85,18 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://trustrachel.com/index-1.html</loc>
+  <lastmod>2013-06-27</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://trustrachel.com/index.html</loc>
-  <lastmod>2013-06-26</lastmod>
+  <lastmod>2013-06-27</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/listings/</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-27</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
