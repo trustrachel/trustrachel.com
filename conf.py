@@ -207,7 +207,7 @@ FILTERS = {
  }
 
 # Create a gzipped copy of each generated file. Cheap server-side optimization.
-# GZIP_FILES = False
+# GZIP_FILES = True
 # File extensions that will be compressed
 # GZIP_EXTENSIONS = ('.txt', '.htm', '.html', '.css', '.js', '.json')
 
