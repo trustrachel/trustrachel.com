@@ -202,9 +202,9 @@ post_compilers = {
 # argument.
 #
 # By default, there are no filters.
-# FILTERS = {
-#    ".jpg": ["jpegoptim --strip-all -m75 -v %s"],
-# }
+FILTERS = {
+  ".less": ["lessc {file} > {basename}.css"],
+ }
 
 # Create a gzipped copy of each generated file. Cheap server-side optimization.
 # GZIP_FILES = False
@@ -257,6 +257,7 @@ DISQUS_FORUM = "trustrachel"
 
 TIMEZONE = 'US/Pacific'
 
+
 # Color scheme to be used for code blocks. If your theme provide "assets/css/code.css" this
 # is ignored.
 # Can be any of autumn borland bw colorful default emacs friendly fruity manni monokai
@@ -276,10 +277,10 @@ TIMEZONE = 'US/Pacific'
 # Used for create favicon link like this:
 # <link rel="name" href="file" sizes="size"/>
 # about favicons, see: http://www.netmagazine.com/features/create-perfect-favicon
-# FAVICONS = {
-#     ("icon", "/favicon.ico", "16x16"),
+FAVICONS = {
+     ("icon", "/favicon.ico", "16x16"),
 #     ("icon", "/icon_128x128.png", "128x128"),
-# }
+}
 
 # Show only teasers in the index pages? Defaults to False.
 # INDEX_TEASERS = False

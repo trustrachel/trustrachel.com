@@ -1,0 +1,330 @@
+@import "../less/reset.less";
+
+// Core variables and mixins
+@import "../less/variables.less"; // Modify this for custom colors, font-sizes, etc
+//@import "../less/responsive.less";
+@import "../less/mixins.less";
+
+// Grid system and page structure
+@import "../less/scaffolding.less";
+@import "../less/grid.less";
+@import "../less/layouts.less";
+
+// Base CSS
+@import "../less/type.less";
+@import "../less/code.less";
+@import "../less/forms.less";
+@import "../less/tables.less";
+
+// Components: common
+@import "../less/sprites.less";
+@import "../less/dropdowns.less";
+@import "../less/wells.less";
+@import "../less/component-animations.less";
+@import "../less/close.less";
+
+// Components: Buttons & Alerts
+@import "../less/buttons.less";
+@import "../less/button-groups.less";
+@import "../less/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+
+// Components: Nav
+@import "../less/navs.less";
+@import "../less/navbar.less";
+@import "../less/breadcrumbs.less";
+@import "../less/pagination.less";
+@import "../less/pager.less";
+
+// Components: Popovers
+@import "../less/modals.less";
+@import "../less/tooltip.less";
+@import "../less/popovers.less";
+
+// Components: Misc
+@import "../less/thumbnails.less";
+@import "../less/labels-badges.less";
+@import "../less/progress-bars.less";
+@import "../less/accordion.less";
+@import "../less/carousel.less";
+@import "../less/hero-unit.less";
+
+// Utility classes
+@import "../less/utilities.less";
+@import "../less/responsive.less";
+
+
+/* VARIABLES AND MIXINS */
+@lightBackground:   #fff8e5;
+@darkBackground:    #fff2ce;
+@purple:            #651989;
+
+.tiny-header (@size: 11px) {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: @size;
+}
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+html {
+    background: url("../images/faux-bg.png") top center repeat-y;
+    height: 100%;
+}
+
+body {
+    border-top: 3px solid @purple;
+    background-color: transparent;
+    font-weight: 300;
+}
+
+/* HEADER */
+header {
+    background: @darkBackground url("../images/faux-bg-header.png") top center repeat-y;
+    #logo {
+        text-align: right;
+        h1 {
+            .tiny-header(17px);
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            a { color: @hotPink; }
+            a:hover { text-decoration: none; color: saturate(@hotPink, 50%);}
+        }
+    }
+    nav {
+        background-color: @lightBackground;
+        ul li { .tiny-header; font-weight: 400; }
+    }
+}
+
+/* SIDEBAR */
+#sidebar {
+    text-align: right;
+    img { margin-bottom:20px; }
+    li {
+        margin-bottom: 45px;
+        li { margin-bottom: auto; }
+        h3 {
+            .tiny-header(14px);
+            color: @purple;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+    }
+    #headline { font-size: 16px; margin-bottom: 45px; }
+    #social-media {
+        li {
+            padding-right: 0;
+            a {
+                width: 25px;
+                height: 26px;
+                display: block;
+                .hide-text;
+                background: url(../images/icons/twitter.png) top left no-repeat;
+            }
+            a:hover { opacity: 0.8; }
+        }
+        .linkedin a { background-image: url(../images/icons/linkedin.png); }
+        .fb a { background-image: url(../images/icons/fb.png); }
+    }
+    .articles {
+        li {
+            margin: 0 0 10px 0;
+        }
+    }
+}
+
+/* MAIN CONTENT AREA */
+#main {
+    a { font-weight: bold; }
+    #headline {
+        margin-bottom: 30px;
+    }
+    article {
+        margin-bottom: 60px;
+        border-bottom: 3px solid lighten(@purple, 60%);
+        padding-bottom: 60px;
+        h2 a { font-weight: 300; color: @hotPink; }
+        p { font-size: 16px; line-height: 28px; font-weight: 300; }
+        .disqus {
+            margin: 60px 0;
+        }
+    }
+    .pagination {
+        margin-bottom: 60px;
+    }
+}
+
+/* SINGLE POST */
+#post #main article {
+    border-bottom:0;
+    h2 { margin-bottom:0; }
+    small { color:@grayLight; }
+    .content { margin-top: 30px; }
+}
+
+/* ARCHIVES */
+#archives #main article {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    h3 a, .read-more { font-weight: 300; }
+    h3 { margin-bottom: 0; }
+    .posted { color: @grayLight; }
+}
+
+/* RESPONSIVENESS */
+/* Large desktop */
+@media (min-width: 1200px) {
+    /* HEADER */
+    header {
+        height: 70px;
+        line-height: 70px;
+        #logo {
+            h1 {
+                padding-right: 65px;
+                line-height: 47px;
+            }
+        }
+        nav {
+            display: block;
+            height: 70px;
+            line-height: 70px;
+            margin-left: 0 !important;
+            padding-left: 30px;
+            ul {
+                padding-left: 35px;
+                li {
+                    margin-right: 60px;
+                }
+            }
+        }
+    }
+
+    /* SIDEBAR */
+    #sidebar {
+        padding-right: 65px;
+        padding-top: 50px;
+    }
+
+    /* CONTENT */
+    #main {
+        padding:35px 0 0 35px;
+        article h2 { margin-bottom:30px; }
+    }
+}
+
+/* Middle area */
+@media (min-width: 980px) and (max-width: 1199px) {
+    html { background: url("../images/faux-bg-1200.png") top center repeat-y; }
+
+    /* HEADER */
+    header {
+        background: @darkBackground url("../images/faux-bg-header-1200.png") top center repeat-y;
+        height: 70px;
+        line-height: 70px;
+        .span8 { width: 605px; }
+        #logo {
+            h1 {
+                padding-right: 65px;
+                line-height: 47px;
+            }
+        }
+        nav {
+            display: block;
+            height: 70px;
+            line-height: 70px;
+            margin-left: 0 !important;
+            padding-left: 15px;
+            ul {
+                padding-left: 35px;
+                li {
+                    margin-right: 60px;
+                }
+            }
+        }
+    }
+
+    /* SIDEBAR */
+    #sidebar { padding: 50px 55px 0 0; }
+
+    /* CONTENT */
+    #main {
+        padding:35px 0 0 35px;
+        article h2 { margin-bottom:30px; }
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    html { background: url("../images/faux-bg-980.png") top center repeat-y; }
+
+    /* HEADER */
+    header {
+        background: @darkBackground url("../images/faux-bg-header-980.png") top center repeat-y;
+        height: 70px;
+        line-height: 70px;
+        #logo {
+            h1 {
+                padding-right: 53px;
+                line-height: 47px;
+            }
+        }
+        nav {
+            display: block;
+            height: 70px;
+            line-height: 70px;
+            margin-left: 3px !important;
+            padding-left: 17px;
+            ul {
+                padding-left: 35px;
+                li {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    #sidebar { padding: 50px 55px 0 0; }
+    #main {
+        padding:35px 0 0 35px;
+        article h2 { margin-bottom:30px; }
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    html { background-image:none; }
+    body { padding: 0; }
+
+    header {
+        height: auto;
+        line-height: auto;
+        padding: 20px 40px;
+        background-image: none;
+        #logo {
+            text-align: left;
+            h1 { margin: 0; }
+        }
+        nav {
+            background-color: transparent;
+            ul.inline > li { padding-left: 0; padding-right: 20px; }
+        }
+    }
+    #main {
+        padding: 40px;
+        article h2 { margin-bottom:20px; }
+    }
+    #sidebar {
+        clear: both;
+        background-color: @lightBackground;
+        text-align: left;
+        padding: 40px;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    html { background-image:none; }
+}

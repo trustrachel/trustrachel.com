@@ -6,7 +6,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://trustrachel.com</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -21,27 +21,27 @@
  </url>
  <url>
   <loc>http://trustrachel.com/2013/06/index.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/2013/index.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/about.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/another-test.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/archive.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -51,27 +51,27 @@
  </url>
  <url>
   <loc>http://trustrachel.com/categories/blarg.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/categories/foo.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/categories/index.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/categories/rarr.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/contact.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -81,12 +81,12 @@
  </url>
  <url>
   <loc>http://trustrachel.com/galleries/index.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/index.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -96,17 +96,17 @@
  </url>
  <url>
   <loc>http://trustrachel.com/listings/index.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/projects.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/test-post.html</loc>
-  <lastmod>2013-06-15</lastmod>
+  <lastmod>2013-06-26</lastmod>
   <priority>0.5000</priority>
  </url>
 </urlset>
