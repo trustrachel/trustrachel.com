@@ -1,0 +1,9 @@
+[Core]
+Name = convert_less
+Module = task_convert_less
+
+[Documentation]
+Author = Rachel Sanders
+Version = 0.1
+Website = http://nikola.ralsina.com.ar
+Description = Convert LESS to CSS

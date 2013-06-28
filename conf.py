@@ -202,9 +202,9 @@ post_compilers = {
 # argument.
 #
 # By default, there are no filters.
-FILTERS = {
-  ".less_this": ["lessc {file} > {basename}.css"],
- }
+#FILTERS = {
+#  ".less_this": ["lessc {file} > {basename}.css"],
+# }
 
 # Create a gzipped copy of each generated file. Cheap server-side optimization.
 # GZIP_FILES = True

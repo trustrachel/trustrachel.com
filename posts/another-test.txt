@@ -1,8 +1,0 @@
-.. link: 
-.. description: 
-.. tags: 
-.. date: 2013/06/14 15:17:44
-.. title: Another test
-.. slug: another-test
-
-Write your post here.
