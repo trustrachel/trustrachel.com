@@ -41,12 +41,12 @@
 @import "../less/popovers.less";
 
 // Components: Misc
-//@import "../less/thumbnails.less";
-//@import "../less/labels-badges.less";
-//@import "../less/progress-bars.less";
-//@import "../less/accordion.less";
-//@import "../less/carousel.less";
-//@import "../less/hero-unit.less";
+@import "../less/thumbnails.less";
+@import "../less/labels-badges.less";
+@import "../less/progress-bars.less";
+@import "../less/accordion.less";
+@import "../less/carousel.less";
+@import "../less/hero-unit.less";
 
 // Utility classes
 @import "../less/utilities.less";
@@ -177,7 +177,7 @@ header {
 
 /* RESPONSIVENESS */
 /* Large desktop */
-@media all (min-width: 1200px) {
+@media (min-width: 1200px) {
     /* HEADER */
     header {
         height: 70px;
@@ -217,7 +217,7 @@ header {
 }
 
 /* Middle area */
-@media all (min-width: 980px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1199px) {
     html { background: url("../images/faux-bg-1200.png") top center repeat-y; }
 
     /* HEADER */
@@ -258,7 +258,7 @@ header {
 }
 
 /* Portrait tablet to landscape and desktop */
-@media all (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 979px) {
     html { background: url("../images/faux-bg-980.png") top center repeat-y; }
 
     /* HEADER */
@@ -294,7 +294,7 @@ header {
 }
 
 /* Landscape phone to portrait tablet */
-@media all (max-width: 767px) {
+@media (max-width: 767px) {
     html { background-image:none; }
     body { padding: 0; }
 
@@ -325,6 +325,6 @@ header {
 }
 
 /* Landscape phones and down */
-@media all (max-width: 480px) {
+@media (max-width: 480px) {
     html { background-image:none; }
 }

@@ -203,13 +203,13 @@ post_compilers = {
 #
 # By default, there are no filters.
 FILTERS = {
-  ".less": ["lessc {file} > {basename}.css"],
+  ".less_this": ["lessc {file} > {basename}.css"],
  }
 
 # Create a gzipped copy of each generated file. Cheap server-side optimization.
-GZIP_FILES = True
+# GZIP_FILES = True
 # File extensions that will be compressed
-GZIP_EXTENSIONS = ('.txt', '.htm', '.html', '.css', '.js', '.json')
+# GZIP_EXTENSIONS = ('.txt', '.htm', '.html', '.css', '.js', '.json')
 
 # #############################################################################
 # Image Gallery Options
