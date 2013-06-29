@@ -107,7 +107,7 @@ SIDEBAR_LINKS = {
 # 'html' assumes the file is html and just copies it
 post_compilers = {
     "rest": ('.txt', '.rst'),
-    "markdown": ('.md', '.mdown', '.markdown'),
+    "markdown": ('.md', '.mdown', '.markdown', '.wp'),
     "textile": ('.textile',),
     "txt2tags": ('.t2t',),
     "bbcode": ('.bb',),
@@ -240,6 +240,8 @@ post_pages = (
     ("stories/*.txt", "", "story.tmpl", False),
     ("posts/*.md", "", "post.tmpl", True),
     ("stories/*.md", "", "story.tmpl", False),
+    ("posts/*.wp", "", "post.tmpl", True),
+    ("stories/*.wp", "", "story.tmpl", False),
 )
 
 TAG_PAGES_ARE_INDEXES = True

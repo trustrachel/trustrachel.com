@@ -6,7 +6,97 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://trustrachel.com/</loc>
-  <lastmod>2013-06-27</lastmod>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2010/</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2010/08/</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2010/08/index.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2010/index.html</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2011/</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2011/02/</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2011/02/index.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2011/03/</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2011/03/index.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2011/index.html</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2012/</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2012/01/</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2012/01/index.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2012/02/</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2012/02/index.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2012/11/</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2012/11/index.html</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/2012/index.html</loc>
+  <lastmod>2013-06-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -21,17 +111,17 @@
  </url>
  <url>
   <loc>http://trustrachel.com/2013/06/index.html</loc>
-  <lastmod>2013-06-27</lastmod>
+  <lastmod>2013-06-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/2013/index.html</loc>
-  <lastmod>2013-06-27</lastmod>
+  <lastmod>2013-06-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/about.html</loc>
-  <lastmod>2013-06-27</lastmod>
+  <lastmod>2013-06-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -41,12 +131,37 @@
  </url>
  <url>
   <loc>http://trustrachel.com/archive.html</loc>
-  <lastmod>2013-06-27</lastmod>
+  <lastmod>2013-06-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/categories/</loc>
-  <lastmod>2013-06-27</lastmod>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/audio.html</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/awesome.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/be-prepared.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/bicycle-repair-man.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/bicycle-repair-woman.html</loc>
+  <lastmod>2013-06-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -55,13 +170,73 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://trustrachel.com/categories/cooking.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://trustrachel.com/categories/foo.html</loc>
   <lastmod>2013-06-27</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://trustrachel.com/categories/food.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/i-am-awesome.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://trustrachel.com/categories/index.html</loc>
-  <lastmod>2013-06-27</lastmod>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/internets.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/jam.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/kits.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/link.html</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/lock-picking.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/nasa.html</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/nerd.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/photo.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/random.html</loc>
+  <lastmod>2013-06-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -70,8 +245,43 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://trustrachel.com/categories/recipes.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/regular.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/sandersclanbrand.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/secretweapon.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/security.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/things-probably-only-rachel-finds-interesting.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/categories/video.html</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://trustrachel.com/contact.html</loc>
-  <lastmod>2013-06-27</lastmod>
+  <lastmod>2013-06-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -86,12 +296,22 @@
  </url>
  <url>
   <loc>http://trustrachel.com/index-1.html</loc>
-  <lastmod>2013-06-27</lastmod>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/index-2.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/index-3.html</loc>
+  <lastmod>2013-06-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://trustrachel.com/index.html</loc>
-  <lastmod>2013-06-27</lastmod>
+  <lastmod>2013-06-29</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -105,8 +325,113 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://trustrachel.com/posts20100802894576403.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts20100803898540194.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts20100804903625683.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts20100805907903474.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts20100806912952086.html</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts20100809927305047.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts20100811937345296.html</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts20100816964816028.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts20100821987764356.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts201008241003733836.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts201102263520038757.html</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts201102273549336995.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts201103023602923266.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts201103073701672590.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts201103153872101713.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts2012012116219720116.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts2012012816604457946.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts2012020817272207442.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts2012020817277872272.html</loc>
+  <lastmod>2013-06-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts20121117mars-rover-documentary.html</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://trustrachel.com/posts20121126flask-v-django.html</loc>
+  <lastmod>2013-06-28</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://trustrachel.com/projects.html</loc>
-  <lastmod>2013-06-27</lastmod>
+  <lastmod>2013-06-28</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -116,7 +441,7 @@
  </url>
  <url>
   <loc>http://trustrachel.com/test.html</loc>
-  <lastmod>2013-06-27</lastmod>
+  <lastmod>2013-06-28</lastmod>
   <priority>0.5000</priority>
  </url>
 </urlset>

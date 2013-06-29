@@ -1,0 +1,569 @@
+<!DOCTYPE html><html class="no-js" lang="en"><!--<![endif]--><head><meta charset="utf-8"><meta name="description" content="I totally know what I'm doing"><meta name="author" content="Rachel Sanders"><title>Trust Rachel (old posts page 2) | Rachel Sanders</title><link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic,700italic" rel="stylesheet" type="text/css"><link href="assets/css/style.css" rel="stylesheet" type="text/css"><!--[if IE]><link href="/assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]--><!--[if IE]><script src="/assets/js/css3-mediaqueries.js"></script><![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml"><link rel="icon" href="favicon.ico" sizes="16x16"></head><body>
+
+  
+        <header><div class="container" id="header">
+                <div class="row">
+                    <div id="logo" class="span4">  
+                        <h1><a href="." title="Trust Rachel">Trust Rachel</a></h1>
+                    </div>
+                    <nav class="span8"><ul class="unstyled inline"><li>
+                                <a href="archive.html">Archive</a>
+                            </li>
+                            <li>
+                                <a href="./about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="./projects.html">Projects</a>
+                            </li>
+                        </ul></nav></div>
+            </div>
+        </header><div class="container">
+            <div class="row">
+                <div class="span8 pull-right">
+                    <div id="main">
+                        
+<div id="main">
+ <ul class="unstyled"><li>
+      
+    <article><h2><a href="posts20121117mars-rover-documentary.html">I'm in the new Mars Rover documentary!</a></h2>
+        <div class="content">
+            <p></p><p></p><p>...for all of one second, in the first five of the show. (Don't blink.) </p>
+<p>BUT STILL. How cool is that? </p>
+<p>It's a great documentary, btw, well worth watching even after the first five seconds:</p>
+<p>[raw]<object width="512" height="328"> <param name="movie" value="http://dgjigvacl6ipj.cloudfront.net/media/swf/PBSPlayer.swf"><param name="flashvars" value="video=http://video.pbs.org/videoPlayerInfo/2303491567&amp;player=viral&amp;end=0"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><param name="wmode" value="transparent"><embed src="http://dgjigvacl6ipj.cloudfront.net/media/swf/PBSPlayer.swf" flashvars="video=http://video.pbs.org/videoPlayerInfo/2303491567&amp;player=viral&amp;end=0" type="application/x-shockwave-flash" allowscriptaccess="always" wmode="transparent" allowfullscreen="true" width="512" height="328" bgcolor="#000000"></embed></object></p><p style="font-size:11px; font-family:Arial, Helvetica, sans-serif; color: #808080; margin-top: 5px; background: transparent; text-align: center; width: 512px;">Watch <a style="text-decoration:none !important; font-weight:normal !important; height: 13px; color:#4eb2fe !important;" href="http://video.pbs.org/video/2303491567" target="_blank">Ultimate Mars Challenge</a> on PBS. See more from <a style="text-decoration:none !important; font-weight:normal !important; height: 13px; color:#4eb2fe !important;" href="http://www.pbs.org/wgbh/nova/" target="_blank">NOVA.</a></p>[/raw]
+        </div>
+         <ul class="unstyled inline"><li>
+                <a href="post.html" class="comment-count">0 comments</a>
+            </li>
+            <li>—</li>
+            <li>posted in <a href="categories/awesome.html">awesome</a>, <a href="categories/nasa.html">nasa</a>            </li>
+         </ul></article><article><h2><a href="posts2012020817277872272.html">100 year old vulnerability in master-keyed locks</a></h2>
+        <div class="content">
+            <p></p><p></p><p>This one is filed under “things probably only Rachel finds interesting” but dammit, I do.</p>
+<p>Recently, I came across <a href="http://www.crypto.com/masterkey.html" target="_blank">this article</a> talking about a security flaw in master-keyed locks.</p>
+<p>You probably remember master-keyed locks from school: your teacher had a key to their classroom, but the janitor had a master key that opened all doors. There’s a flaw in this system that lets you recreate the master key easily if you have access to one of the locks and have (or have examined) its associated, non-master key.</p>
+<p>Locksmiths (and criminals) have known about this for over a hundred years, but it was made public only in 2003. (!)</p>
+<p>OK, first some background. The common household or commercial lock is a pin tumbler[1. I wrote "tumblr" first. I hate you, web 2.0. ] cylinder lock.</p>
+<p><img src="assets/images/articles/tumblr_lz394zF4lu1qzjuyp.png" alt=""></p>
+<p>[Source: <a href="http://en.wikipedia.org/wiki/File:Pin_tumbler_no_key.svg" target="_blank">Wikipedia</a>]</p>
+<p>The yellow and green bits are cylinders. The yellow one is where you stick your key in, and it rotates inside the green one.  Normally, it’s prevented from doing that by the red and purple pins. At rest, they block the gap between the cylinders and prevent the yellow one from turning.</p>
+<p>When you put your key in the lock, the teeth on the key line up the pins so the gap between them coincides with the gap between the cylinders. This lets you rotate the yellow cylinder, opening the door.</p>
+<p><img src="assets/images/articles/tumblr_lz39geYjHh1qzjuyp.png" alt=""></p>
+<p>[<a href="http://www.crypto.com/papers/mk.pdf" target="_blank">Source</a>]</p>
+<p>To make a lock take multiple keys, you just have multiple cuts in the pins:</p>
+<p><img src="assets/images/articles/tumblr_lz39wuFkuH1qzjuyp.png" alt=""></p>
+<p>The second key lines up a different set of cuts and so opens the lock. This is how master keys work: each lock is set up so it’s opened by one unique combination (the teacher key) and one common one (the janitor/master key).</p>
+<p>Can you guess what the vulnerability is?</p>
+<p>I’ll give you a hint: there’s more than two keys that open this lock.</p>
+<p>The trick is, the lock doesn’t care <em>which</em> pins line up with the cylinder. Any combination will do. If there are five pins in the lock, a key with four teeth the same as the teacher key and one the same as the master key will still open the lock.</p>
+<p>The attack works like this. Take a high school kid (we’ll call him Roger, no relation to my boyfriend at the time) with a predilection for trouble and access to one of the teacher keys. He could have a physical key (say he works as an aide for one of the teachers) or he could have just handled a key (the teacher temporarily lent him her keys to open the door).  According to the article, pin height is usually standardized. An expert can look at a key and memorize the values. A photo or an impression in clay would also work.</p>
+<p>Let’s say Roger figures out the key is for a five pin lock with pin heights from 1-4. In this notation, his key is 23421.</p>
+<p>All he has to do is make keys where only one of the pins changes:</p>
+<p></p><ul><li><strong>4</strong>3421</li>
+    <li><strong>3</strong>3421</li>
+    <li><strong>1</strong>3421</li>
+</ul><p>and try them in the lock. If 33421 opens the lock, he knows the first pin of the master key is 3. It’s very common for people to fumble with keys, so trying three or four keys in a row won’t make anybody suspicious. Then repeat for each of the pins.</p>
+<p>Also note Roger doesn’t have to try all combinations at once - he could vary a new pin each day. By the end of the week, he’d have the set and the entire weekend to break into the principal’s office and do unspeakable things to his desk.</p>
+<p>I’ve glossed over some of the details, but the scholarly article is short and quite readable. Recommended: <a href="http://www.crypto.com/papers/mk.pdf" target="_blank">http://www.crypto.com/papers/mk.pdf</a></p>
+        </div>
+         <ul class="unstyled inline"><li>
+                <a href="post.html" class="comment-count">0 comments</a>
+            </li>
+            <li>—</li>
+            <li>posted in <a href="categories/lock-picking.html">lock picking</a>, <a href="categories/regular.html">regular</a>, <a href="categories/security.html">security</a>, <a href="categories/things-probably-only-rachel-finds-interesting.html">things probably only Rachel finds interesting</a>            </li>
+         </ul></article><article><h2><a href="posts2012020817272207442.html">Bicycle UPDATE</a></h2>
+        <div class="content">
+            <p></p><p></p><p><img src="assets/images/articles/tumblr_lz38c79Mrl1qzjuyp.jpg"></p>
+<p>Oh my god this thing rides so much better.  You have no idea. </p>
+        </div>
+         <ul class="unstyled inline"><li>
+                <a href="post.html" class="comment-count">0 comments</a>
+            </li>
+            <li>—</li>
+            <li>posted in <a href="categories/regular.html">regular</a>            </li>
+         </ul></article><article><h2><a href="posts2012012816604457946.html">Bicycle Repair (Wo)man</a></h2>
+        <div class="content">
+            <p></p><p></p><p>As many of you know, I have a NEW JOB. Hooray!</p>
+<p>New Job is all of 2.5 miles from my house, so I figured I probably shouldn’t be a lazyass and drive. So I bought a bike. Used. Off Craigslist. Late at night from an Irish guy out of a warehouse and it was <em>not at all sketchy</em>.</p>
+<p>BEHOLD. My new bike:</p>
+
+<p><img align="middle" alt="It's BEEUUUUUTIIIFULL" height="478" src="assets/images/articles/6773160947_270116f084_z.jpg" width="640"></p>
+
+<p>Yeah, yeah, okay, it’s not very impressive. “Hell of ugly” you might say. It was $80 off Craigslist. Whadda want.</p>
+
+<p>It worked fine enough for 2.5 miles over flat territory, but after riding it a few times, I noticed it had a few issues:</p>
+
+<ul><li>A complete lack of interest in going up to a higher gear</li>
+
+<li>If I got it in a higher gear, after a minute it’d decide it’d really rather not </li>
+
+<li>It made weird grumbly noises if I really really insisted on being in a higher gear</li>
+
+<li>I got too much of a workout riding the thing 2.5 miles over flat ground</li>
+
+</ul><p>Did I mention used? Craiglist? Eighty bucks?</p>
+
+<p>So I went on Youtube, looked up “bicycle repair” and I’ve been able to fix most of the problems. I be writing this down so I remember what the hell I did, and maybe one of you will have a cheapass bike that needs fixing.</p>
+
+<p><strong>Bad Cable Tension</strong></p>
+
+<p><iframe frameborder="0" height="315" src="http://www.youtube.com/embed/ipTjWnxunHI" width="420"></iframe></p>
+
+<p>One of the first videos I found was this one, on how to adjust cable tension.  Sure enough, the rear cable was hell of loose. I hand-tightened it up to where it looked OK. Shifting the rear gears worked better after that.</p>
+
+<p><img alt="Tightening the rear cable" height="500" src="assets/images/articles/6773157383_373dc8f3a9.jpg" width="373"></p>
+
+<p><strong>Bad Shifter Tension (?)</strong></p>
+
+<p>I don’t know what to call this - I couldn’t find a video on it. The problem was the front shifter would not stay in a higher gear.  You ratchet it up and it would ratchet itself right back down, thank you very much.</p>
+
+<p>Turns out there’s a screw on the shifter that was really, really loose.</p>
+
+<p><img alt="I screwed it good. " height="500" src="assets/images/articles/6773160023_870db05672.jpg" width="373"></p>
+
+<p>I screwed it in until it was tight. That fixed it.  Yes, I am a genius.</p>
+
+<p><strong>Front derailleur is whack</strong></p>
+
+<p><iframe frameborder="0" height="315" src="http://www.youtube.com/embed/ngm6dr-1na0" width="560"></iframe></p>
+
+<p>This guy, despite his annoying habit of telling you what to do, and then remembering the three steps you should do <em>before</em> you do that thing, walks you through adjusting the low and high limits for the derailleur. This sets how high and low it shunts the chain.</p>
+
+<p>On my bike, the limit screws look like this:</p>
+
+<p><img alt="There's a joke to be made here about high and low screwing, but this is a classy place." height="500" src="assets/images/articles/6773158969_ccb893cb21.jpg" width="373"></p>
+
+<p>Sure enough, they were wildly off on my bike, and I’m still not sure I have the high limit set right.  At least I can get it into high gear.</p>
+
+<p><strong>Brakes are whack</strong></p>
+
+<p><iframe frameborder="0" height="315" src="http://www.youtube.com/embed/njE_85TLL2Y" width="420"></iframe></p>
+
+<p>As I finished all that stuff up, I noticed the front brakes were really tight and one side was rubbing against the tire.  So THAT’s why I get a really nice workout riding the bike.</p>
+
+<p>The light outside’s going, so I’ll probably adjust this tomorrow.</p>
+
+<p><iframe frameborder="0" height="315" src="http://www.youtube.com/embed/U01xasUtlvw" width="420"></iframe></p>
+
+<p></p>
+        </div>
+         <ul class="unstyled inline"><li>
+                <a href="post.html" class="comment-count">0 comments</a>
+            </li>
+            <li>—</li>
+            <li>posted in <a href="categories/bicycle-repair-man.html">bicycle repair man</a>, <a href="categories/bicycle-repair-woman.html">bicycle repair woman</a>, <a href="categories/i-am-awesome.html">i am awesome</a>, <a href="categories/regular.html">regular</a>            </li>
+         </ul></article><article><h2><a href="posts2012012116219720116.html">App Showdown: Orchestra vs Remember the Milk</a></h2>
+        <div class="content">
+            <p></p><p></p><p>I loves me some to-do apps. I’m not a list-checker-off kinda person, you know, the kind that makes lists and lists of lists and delightedly ticks them all off one by one. Those people are weird. For me, it boils down to this: if I don’t write it down, it won’t get done.</p>
+<p>You’d think making a good todo app would be easy, but apparently not. Every single one I’ve used falls prey to: easy to use, full featured and pretty. Pick two. </p>
+<p>Orchestra and Remember the Milk (RTM) have been battling it out on my phone for Best App That Keeps Rachel On Task.  Here’s my review of them:</p>
+
+<p><img src="assets/images/articles/tumblr_ly54l4MTdt1qzjuyp.jpg"> <strong>Orchestra (Free, iOS)</strong></p>
+
+<p>I downloaded it because Lifehacker loooooooooves Orchestra and it’s FREE.  I’ve used it for a couple months now.</p>
+
+<p>Things I like: it’s pretty! Mmm, iOS goodness. It’s dead easy to use. I also like that you can easily share tasks and lists. My husband and I use it all the time for shopping lists assigning each other stuff to do (“buy Diet Coke” “get rid of MacBook box” “bite me”). </p>
+
+<p>BUT. It’s seriously lacking some basic functionality. Reordering items in a list? Nope. Reordering lists by anything other than creation date? Nope. Reminders? NOPE NOPE NOPE. But hey, there’s a button to “ask for help on Facebook”.  Awesome. Thanks guys.</p>
+
+<p>I’m torn - I like, but find it very unwieldy to use when I have lots of lists or lots of tasks.  You can’t tag items or reorganize all that well - the best you can do is create a new list and move tasks to it. </p>
+
+<p><img src="assets/images/articles/tumblr_ly54x7n76T1qzjuyp.png"><strong>Remember the Milk (Free/$25 Pro)</strong></p>
+
+<p>This is todo software that lacks NOTHING in terms of features. I mean it. If I want to make a high priority task due at 8:16pm next Thursday, geotagged with a specific address, tagged with nine different categories AND have reminders set via iPhone app, Jabber and SMS? Bah, I can enter all that in ONE LINE. </p>
+
+<p>The iPhone/iPad app is not awful - it’s not nearly as pretty as Orchestra, but it’s functional.  A free account allows syncing once a day, which is basically useless and only good to try out what you’ll get with the pro version. </p>
+
+<p>As for the bad, the web UI leaves quite a bit to be desired. I don’t know who decided floaty boxes that move with your mouse are the bestest place to do data entry, but that person should be kicked in the shin. Also the name is kind of dumb (and I know at least one person who refuses to use it based solely on that). </p>
+
+<p><strong>And the winner is….</strong></p>
+
+<p>RTM. I’m not in love with it, but honestly, I haven’t found anything to beat it in terms of features and organization of tasks. I’m looking forward to Orchestra’s next release, which hopefully should be ANY DAY NOW, right guys?</p>
+
+<p></p>
+        </div>
+         <ul class="unstyled inline"><li>
+                <a href="post.html" class="comment-count">0 comments</a>
+            </li>
+            <li>—</li>
+            <li>posted in <a href="categories/regular.html">regular</a>            </li>
+         </ul></article><article><h2><a href="posts201103153872101713.html">Jam &amp; Laziness</a></h2>
+        <div class="content">
+            <p></p><p></p><p>I make jam because I’m lazy.</p>
+<p>But, you say, can’t you buy jam from the store? How much more lazy can you get?</p>
+<p>Aha, I say, but then you have to put on pants. And find your keys. And find your <s>preeeeeecious</s>iPhone. And drive to the store. And find the jam. And find the <em>right</em> jam that doesn’t have all that weird coloring and HFCS. That’s work, people. <em>Hard work</em>. </p>
+
+<p>The solution to this madness?* Freezer jam. You can make it from easily stored ingredients in less time than it takes to go to the store. And I’m only somewhat lying.</p>
+
+<p>There’s no cooking and above all, NO CANNING. I don’t know about you, but the idea of doing a lot of work to give myself botulism…eh.</p>
+
+<p>Freezer jam is so-called because it’s stored in the freezer instead of all that canning nonsense, and it’s not cooked so it actually tastes like fruit. Even with supermarket frozen berries, it’s better than just about anything you can buy in the store. And you don’t even need any pants.</p>
+
+<p><img src="assets/images/articles/tumblr_lhb8pcFJkH1qzjuyp.jpg"></p>
+
+<p>What you will need is:</p>
+
+<ul><li>Fruit (fresh or frozen, both work great)</li>
+
+<li>Pectin (the normal powder kind, not the gel or the low-sugar stuff)</li>
+
+<li>a crapton of sugar (somewhere about 4-5 cups) </li>
+
+<li>lemon juice (optional)</li>
+
+<li>salt (optional)</li>
+
+<li>some empty jars or tupperware containers</li>
+
+</ul><p>For this batch, I used two 1lb bags of blackberries from Safeway. The better the fruit, the better the jam, but this is what I had on hand. It works.</p>
+
+<p><img src="assets/images/articles/tumblr_lhb8wjW1kv1qzjuyp.jpg"></p>
+
+<p>The fruit needs to be room temperature, so if you’re working from frozen, I recommend defrosting in the microwave. If you just dump berries in a bowl, you’ll be waiting about four hours for them to defrost. Not that I would know.</p>
+
+<p>THEN HULK SMASH BERRIES! GRRRRRRRAAAAAAA!!!!</p>
+
+<p><img src="assets/images/articles/tumblr_lhb8xhFVX41qzjuyp.jpg"></p>
+
+<p>You <em>can</em> do this in the food processor…but it’s too easy to puree the fruit or make it all choppy. The potato masher approach works best, IMHO. And it’s very satisfying. BERRY SMASH GOOD. </p>
+
+<p>When you’re done, measure how much fruit you have. </p>
+
+<p>The pectin box will have a recipe for no-cook freezer jam, and I base how much sugar to add on that. It depends on what your fruit is. For blackberries, it’s 5.5 cups for a quart of berries. This batch was less than a quart so I used only 4.5 cups. It’s fine to use a little less than they say, but don’t reduce it dramatically. You need the sugar for it to jell properly.</p>
+
+<p>Dump the disturbingly large amount of sugar in the berry mixture and stir around.  Leave it to sit for about 10 minutes, or until all the sugar crystals have dissolved. Stirring makes it go faster, but it’s fine to go off and play Angry Birds or something.** </p>
+
+<p>Usually this is where I add lemon juice (1-2 teaspoons) and a tiny bit of salt (1/8 teaspoon), but it’s optional. When I have lemon on hand, I use it, and if I don’t, I don’t. That’s just how I roll.</p>
+
+<p>Once that’s done, dump pectin in sauce pan, add 3/4 cup water, bring to boil, boil for minute. It’s easy like Sunday morning.***</p>
+
+<p><img src="assets/images/articles/tumblr_lhnr62t6Fv1qzjuyp.jpg"></p>
+
+<p>Then dump the boiling pectin in the fruit and stir around for a couple minutes until you’re really really really sure it’s all mixed in.</p>
+
+<p>Then divide up between your containers. Now you’ve got a use for all those old jam jars you save for no readily apparent reason and your husband keeps asking why you save them and then stealthily recycling when you’re not looking. No. Not today, for today you are vindicated! YES!</p>
+
+<p><img src="assets/images/articles/tumblr_lhb9nnfAsk1qzjuyp.jpg"></p>
+
+<p>Aren’t they lovely?</p>
+
+<p>They’ll need to sit on the counter for 24 hours to set up****, but you should see them start to jell in an hour or so. After that, they keep in the fridge for three weeks or the freezer for up to a year.  (I’ve never had a batch last that long, though.)</p>
+
+<p>Hooray for lazy!</p>
+
+<p>~~~~</p>
+
+<p>* This line was “How to get out of this jam?” in the first draft. Don’t worry, I already slapped myself.</p>
+
+<p>** Who wants to bet when this reference will seem old and absurdly dated? I call July 2012.</p>
+
+<p>*** OF COURSE this popped into my head while writing and now it won’t leave. If I have to suffer, you have to suffer. </p>
+
+<p>**** Thus the “kind of lying” part. I suppose it doesn’t take 24 hours to get to the store unless you’re Pa Ingalls. </p>
+
+<p></p>
+        </div>
+         <ul class="unstyled inline"><li>
+                <a href="post.html" class="comment-count">0 comments</a>
+            </li>
+            <li>—</li>
+            <li>posted in <a href="categories/cooking.html">cooking</a>, <a href="categories/jam.html">jam</a>, <a href="categories/regular.html">regular</a>            </li>
+         </ul></article><article><h2><a href="posts201103073701672590.html">The MacGyver Kit</a></h2>
+        <div class="content">
+            <p></p><p></p><p><img src="assets/images/articles/tumblr_lhcvktm3BE1qzjuyp.jpg"></p>
+<p>The inspiration for this project was simple: I rubbed my eyes. For those of you who don’t wear contact lenses, you’re not aware of the peril I was in. Contact lenses are amazing little beasties, but if your eyes are dry (and mine were) they’ll pop off and instantly dry up into expensive, transparent raisins. You then have about 45 seconds to fumble about and find saline or water to have any hope of getting them back in.</p>
+<p>No problem…if you’re at home. If you’re twenty miles away on campus, not so much. Thankfully I found a drinking fountain and spent the rest of the day with one gritty, filmy contact lens and a headache.</p>
+
+<p>Thus the MacGyver Kit was born.*</p>
+
+<p>This kit fixes things that’ll ruin your day: headaches, backaches, colds, bad breath, blisters, cracked lips, unexpected trips to the beach, hangnails, parking meters and loud people. It fits in almost any bag and goes in carry-on luggage. </p>
+
+<p>First, you need a container. I made my own box pouch <a title="I've made like five of these in different sizes. Love them." target="_blank" href="http://modernquiltlove.wordpress.com/2009/07/14/perfect-box-pouch-tutorial/">using this pattern</a>, but you can use a makeup bag or other travel case. My bag measures 5” long by 3” wide by 2” tall - about the size of a can of soda. </p>
+
+<p><img src="http://img576.imageshack.us/img576/8420/img0741d.jpg" width="800"></p>
+
+<p>And here’s what’s on the inside (<a href="assets/images/articles/img0743ts.jpg" target="_blank">slightly bigger image here</a>):<img src="assets/images/articles/tumblr_lhcvv2vElJ1qzjuyp.jpg"></p>
+
+<p>My current rev of the kit contains (starting from front left):</p>
+
+<ul><li>Bandaids (5)</li>
+
+<li>Knuckle bandaid (1)</li>
+
+<li>Blister pads (3)</li>
+
+<li>Sewing kit with:     
+
+<ul><li>needle</li>
+
+<li>black and white thread</li>
+
+<li>black and white buttons</li>
+
+<li>safety pins (3)</li>
+
+</ul></li>
+
+<li>Excedrin</li>
+
+<li>Throat lozenge</li>
+
+<li>Benadryl</li>
+
+<li>Dayquil</li>
+
+<li>Prescription medication</li>
+
+<li>Ibeprofin</li>
+
+<li>$1 in quarters</li>
+
+<li>$20 bill </li>
+
+<li>Contact lens case containing:
+
+<ul><li>lip balm</li>
+
+<li>suntan lotion</li>
+
+</ul></li>
+
+<li>Spare set of contact lenses</li>
+
+<li>Saline eye solution</li>
+
+<li>Floss</li>
+
+<li>Nail clippers</li>
+
+<li>Tweezers</li>
+
+<li>Hair bands</li>
+
+<li>Toothpaste</li>
+
+<li>Deodorant</li>
+
+<li>Sacred tokens of my people</li>
+
+<li>More sacred tokens of my people</li>
+
+<li>Earplugs</li>
+
+<li>Cotton string</li>
+
+<p></p></ul><p>The medications are in plastic wrap. I wrote what they are on a scrap of paper and put it under the final fold of wrap:</p>
+<p> <img src="assets/images/articles/tumblr_lhcy3vJEzW1qzjuyp.jpg"></p>
+
+<p>The sewing kit is DIY too. It’s made out of a scrap of fleece leftover from another sewing project, and closed by the safety pins:</p>
+
+<p><img src="assets/images/articles/tumblr_lhcy6a76GJ1qzjuyp.jpg"></p>
+
+<p>Inside</p>
+
+<p><img src="assets/images/articles/tumblr_lhcy6rtWjN1qzjuyp.jpg"></p>
+
+<p>The thread is wrapped around a notched piece of paper. </p>
+
+<p><img src="assets/images/articles/tumblr_lhcy833edJ1qzjuyp.jpg"></p>
+
+<p>Would you believe I still have a couple square inches of room in my kit? I’m considering adding:</p>
+
+<ul><li><strong>Instructions</strong>. First aid, emergency numbers, knot tying, card games, submarine plans, you name it. Print it out in tiny tiny print and shove it in. </li>
+
+<li><strong>Superglue</strong>.  Never know when you might need to stick a thing to another thing. Or fix your pantyhose.</li>
+
+<li><strong>Duct tape</strong>.  Or tape a thing to a thing.</li>
+
+<li><strong>Thumb drive</strong>. With a TrueCrypt drive, I can carry all my important documents around with me. You never know when you might need your 2007 taxes. </li>
+
+</ul><p>Cost? That’ll vary by how much you have on hand. I think I spent about $20 on items specifically for the kit. It’s more than worth it - the bandaids, blister packs and womanly things have already been replaced.  </p>
+
+<p>And I never have to be afraid of rubbing my eyes again.</p>
+
+<p>~~</p>
+
+<p>* Alternative, less family friendly name: The Oh Sh*t Kit.</p>
+
+<p></p>
+        </div>
+         <ul class="unstyled inline"><li>
+                <a href="post.html" class="comment-count">0 comments</a>
+            </li>
+            <li>—</li>
+            <li>posted in <a href="categories/awesome.html">awesome</a>, <a href="categories/be-prepared.html">be prepared</a>, <a href="categories/kits.html">kits</a>, <a href="categories/regular.html">regular</a>            </li>
+         </ul></article><article><h2><a href="posts201103023602923266.html">More crazy laser cutter action</a></h2>
+        <div class="content">
+            <p></p><p></p><p>Crazy Crap We’ve Made Vaguely Recently Week continues, with our wedding invitations. I love showing them off (to a rather scary degree) since I think they turned out awesome.</p>
+<p>Like the glassware, we also made ‘em on the laser cutter. </p>
+<p><img src="assets/images/articles/1front.jpg" alt="You have no idea how long it took to learn to tie a flat knot correctly. Seriously." width="800"></p>
+
+<p>The edging is all laser-cut. We were trying for wood bark but it turned out more abstract. I like it: </p>
+
+<p><img src="assets/images/articles/3edging.jpg" alt="Seeing the laser cut out all those tiny bits is very satisfying." width="800"></p>
+
+<p>Detail of one of the monograms: </p>
+
+<p><img src="assets/images/articles/4monogram.jpg" alt="I forget which font this is, but it's pretty." width="800"></p>
+
+<p>If you turn the invitation over, this is the only thing on the back. I think that’s all you need.</p>
+
+<p><img src="assets/images/articles/2back.jpg" alt="Friggin LASERS" width="800"></p>
+
+<p><span>The inside. It’s an oak tree (a coast live oak, ubiquitous in this area) and leaves, drawn by my husband.</span></p>
+
+<p>[missing image]</p>
+<p><span>Detail of the oak leaves. I really liked those oak leaves, we used them as motifs on everything. Note the scorching from the laser on the edges, which I think is a neat effect and makes it look more organic. </span></p>
+
+<p><span><img src="assets/images/articles/6insidedetail.jpg" alt="Purty." width="800"></span></p>
+
+<p>Once we got a design down, it didn’t take too long to power through them all. Especially since our wedding was fairly small.  It took a couple days to nail down a design, four hours to cut them all, one afternoon to spray glue them together and one afternoon to assemble and mail them.  They were a big hit.</p>
+
+<p>It was the only really insanely crafty thing we did for the wedding, I promise. </p>
+
+<p></p>
+        </div>
+         <ul class="unstyled inline"><li>
+                <a href="post.html" class="comment-count">0 comments</a>
+            </li>
+            <li>—</li>
+            <li>posted in <a href="categories/regular.html">regular</a>            </li>
+         </ul></article><article><h2><a href="posts201102273549336995.html">Wine glasses</a></h2>
+        <div class="content">
+            <p></p><p></p><div class="figure"><figure><img src="assets/images/articles/tumblr_lh7v8tUKCR1qa03hjo1_1280.jpg" alt=""></figure></div>
+<div class="code"><pre>    <span class="nt">&lt;p&gt;</span>Speaking of crazy stuff we’ve made vaguely recently, here’s some etched wine glasses we did for Christmas using the laser cutter at Techshop. Each one is etched with a little icon so you can remember which one’s yours. They were a HUGE hit.<span class="nt">&lt;/p&gt;</span>
+</pre></div>
+
+
+<p></p><p>We did a set for friends with hand grenades, ninja stars, tanks, shoes, a handbag, cherries, etc., but the ones in the picture are our set.  Since I’m an ex-astrophysicist, I requested the astronomical symbols for the planets.  Front to back you have Jupiter, Saturn, the Moon and Earth.</p>
+        </div>
+         <ul class="unstyled inline"><li>
+                <a href="post.html" class="comment-count">0 comments</a>
+            </li>
+            <li>—</li>
+            <li>posted in <a href="categories/photo.html">photo</a>            </li>
+         </ul></article><article><h2><a href="posts201102263520038757.html">Blimp drone</a></h2>
+        <div class="content">
+            <p></p><p></p><iframe width="400" height="299" src="http://www.youtube.com/embed/N-Tu_FDMtkI?wmode=transparent&amp;autohide=1&amp;egm=0&amp;hd=1&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;showsearch=0" frameborder="0" allowfullscreen></iframe>               <p>I posted this on Facebook, but completely forgot about posting it here on the blog. This was our final project for ME 106 (Mechatronics): an autonomous blimp drone that was designed to be self-powered and avoid obstacles.</p>
+<p>This video is our first test flight, and after the demo we had a little fun <a title="FLY MY PRETTY FLY" href="http://www.youtube.com/watch?v=A-Edyekptqw" target="_blank">running down the batteries</a>.  (Please excuse the coughing, I’d caught a horrible cold right in time for the final project demo and was hopped up on tons of cough syrup.)  </p>
+<p>We got our inspiration from the <a title="Blimpduino" href="http://diydrones.com/profiles/blog/show?id=705844%3ABlogPost%3A44817" target="_blank">Blimpduino </a>project, an open-source autonomous blimp drone powered by an Arduino, but this is our own engine design and our own code.  If you’re bored, feel free to read our <a title="Blimptastic!" href="https://docs.google.com/document/d/1BT-Xers0qEtdb9xvZu886dAwwylwTDWi-5eghLBQ8FA/edit?hl=en&amp;authkey=CJma4uoC" target="_blank">term project writeup</a>.</p>
+
+<p>We had a number of last minute disasters with this project.  You’ll notice the um, creative use of balloons? Due to cost (helium is expensive, yo) we could only fill the blimp the day before the project was due. Naturally we discovered we’d vastly overestimated how much lift we’d have.  Instead of one RC blimp balloon….well, you see what we had to frantically tape together to get the thing to work.</p>
+
+<p>The other big disaster was we originally had two sensing systems on board: an IR sensor to detect the ceiling (to maintain level flight), and a ultrasonic sensor for range-finding. Except my partner accidentally broke the ultrasonic sensor three days before and we couldn’t get a replacement in time.  IR has a much shorter range than ultrasonic does (80 cm vs 12m!) so our blimp got really myopic. Also it meant we had to scrap all altitude control which made flight really unstable.</p>
+
+<p>However, we powered through and got the damn thing to fly, which I’m pretty proud of.  This was a really fun project, I loved it. </p>
+
+<p></p>
+        </div>
+         <ul class="unstyled inline"><li>
+                <a href="post.html" class="comment-count">0 comments</a>
+            </li>
+            <li>—</li>
+            <li>posted in <a href="categories/video.html">video</a>            </li>
+         </ul></article></li>
+  </ul><div>
+<ul class="pager"><li class="previous">
+        <a href="index-3.html">← Newer posts</a>
+    </li><li class="next">
+        <a href="index-1.html">Older posts →</a>
+</li></ul></div>
+
+    
+       <script type="text/javascript">var disqus_shortname="trustrachel";(function(){var a=document.createElement("script");a.async=true;a.type="text/javascript";a.src="http://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(a)}());</script></div>
+
+                    </div>
+                </div>
+
+                <div class="span4 pull-left">
+                    <div id="sidebar">
+                        <img src="assets/images/rachel.jpeg" alt="Rachel Sanders"><p id="headline">I'm a staff software engineer at LinkedIn, co-founder of <a href="http://www.meetup.com/PyLadiesSF/">SF PyLadies</a>, and <a href="http://www.flickr.com/photos/nasahqphoto/7721165576/">#MSL NASA Tweetup</a> alum. 
+                        Opinions here are my own.</p>
+                        
+                        <ul class="unstyled"><li id="social-media">
+                                <h3>Find Me On</h3>
+                                <ul class="unstyled inline"><li class="twitter">
+                                        <a href="http://twitter.com/trustrachel">Twitter</a>
+                                    </li>
+                                    <li class="fb">
+                                        <a href="http://facebook.com/rachel.cordray.sanders">Facebook</a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="http://linkedin.com/in/rachelasanders">LinkedIn</a>
+                                    </li>
+                                </ul></li>
+
+                            <li class="articles">
+                                <h3>Recent Posts</h3>
+                                <ul class="unstyled"><li>
+                                        <a href="test.html">Test</a>
+                                    </li>
+                                    <li>
+                                        <a href="projects.html">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="posts20121126flask-v-django.html">Flask v. Django</a>
+                                    </li>
+                                </ul></li>
+
+                            <li class="articles">
+                                <h3>Post Categories</h3>
+                                <ul class="unstyled"><li>
+                                        <a href="categories/internets.html">internets</a>
+                                    </li>
+                                    <li>
+                                        <a href="categories/photo.html">photo</a>
+                                    </li>
+                                    <li>
+                                        <a href="categories/awesome.html">awesome</a>
+                                    </li>
+                                    <li>
+                                        <a href="categories/random.html">random</a>
+                                    </li>
+                                    <li>
+                                        <a href="categories/kits.html">kits</a>
+                                    </li>
+                                </ul></li>
+
+                            <li class="articles">
+                                <h3>Posts by Date</h3>
+                                <ul class="unstyled"><li>
+                                        <a href="2012/02/index.html">February 2012</a>
+                                    </li>
+                                    <li>
+                                        <a href="2013/06/index.html">June 2013</a>
+                                    </li>
+                                    <li>
+                                        <a href="2010/08/index.html">August 2010</a>
+                                    </li>
+                                    <li>
+                                        <a href="2012/01/index.html">January 2012</a>
+                                    </li>
+                                    <li>
+                                        <a href="2012/11/index.html">November 2012</a>
+                                    </li>
+                                </ul></li>
+
+                        </ul></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+            <div class="span8 pull-right">Contents © 2013 <a href="http://twitter.com/trustrachel">Rachel Sanders</a></div>
+            </div>
+        </div>
+  
+      
+      <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script><![endif]-->
+        <script src="assets/js/jquery-1.10.1.min.js" type="text/javascript"></script></body></html>

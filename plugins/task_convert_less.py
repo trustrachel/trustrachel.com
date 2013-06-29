@@ -30,9 +30,10 @@ from nikola import utils
 
 def lessify(src, dst):
   print "yay this ran"
-  subprocess.check_call("lessc {src} > {dst}".format(src=src, dst=dst, shell=True))
-  
-          
+  print src
+  print dst
+  subprocess.check_call("lessc {src} > {dst}".format(src=src, dst=dst), shell=True)
+            
 class ConvertLess(LateTask):
   """Copy static files into the output folder."""
 
@@ -62,6 +63,7 @@ class ConvertLess(LateTask):
                   dst_file = os.path.join(root, dst_file_name)
                   
                   yield {
+                      'basename' : self.name,
                       'name': str(dst_file),
                       'file_dep': [src_file],
                       'targets': [dst_file],
