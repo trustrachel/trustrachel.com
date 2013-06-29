@@ -228,7 +228,7 @@ post_compilers = {
 
 # Data about post-per-page indexes
 # INDEXES_TITLE = ""  # If this is empty, the default is BLOG_TITLE
-# INDEXES_PAGES = ""  # If this is empty, the default is 'old posts page %d' translated
+INDEXES_PAGES = " "  # If this is empty, the default is 'old posts page %d' translated
 
 # Name of the theme to use.
 THEME = 'custom'
