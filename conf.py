@@ -249,6 +249,8 @@ TAG_PAGES_ARE_INDEXES = True
 CREATE_MONTHLY_ARCHIVE = True
 
 INDEX_TEASERS = True
+INDEX_DISPLAY_POST_COUNT = 5
+
 
 CONTENT_FOOTER = 'Contents &copy; {date} <a href="http://twitter.com/trustrachel">{author}</a>'
 CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
@@ -259,6 +261,7 @@ DISQUS_FORUM = "trustrachel"
 
 TIMEZONE = 'US/Pacific'
 
+INDEXES_WORDPRESS_STYLE_PAGINATION = True
 
 # Color scheme to be used for code blocks. If your theme provide "assets/css/code.css" this
 # is ignored.
@@ -273,7 +276,7 @@ TIMEZONE = 'US/Pacific'
 # THEME_REVEAL_CONGIF_TRANSITION = 'cube' # You can also use: page/concave/linear/none/default
 
 # date format used to display post dates. (str used by datetime.datetime.strftime)
-# DATE_FORMAT = '%Y-%m-%d %H:%M'
+DATE_FORMAT = '%A, %B %d, %Y at %I:%M %p'
 
 # FAVICONS contains (name, file, size) tuples.
 # Used for create favicon link like this:
