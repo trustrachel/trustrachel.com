@@ -1,0 +1,32 @@
+<html><body><p><iframe src="http://www.slideshare.net/slideshow/embed_code/14125522" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> </p><div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/rachelcordraysanders/flask-vs-django" title="Flask vs. Django" target="_blank">Flask vs. Django</a> </strong> from <strong><a href="http://www.slideshare.net/rachelcordraysanders" target="_blank">Rachel Sanders</a></strong> </div>
+
+
+This is a lightning talk I gave a couple months ago  at a <a title="PyLadies SF" href="http://www.meetup.com/PyLadiesSF/" target="_blank">PyLadies SF</a> meetup. 
+
+
+
+<strong>TL;DR: Both are great tools. Django is better for fast and Flask is better for flexible. </strong>
+
+
+
+<!--more-->
+
+
+
+I have to admit, I've never used Django in production, but I have used it for some test projects and loved it. When I first met Flask, I was confused about why anybody liked it. You'll see it in the slides, but a working Flask app can be just SEVEN LINES OF CODE. No plugins, no database, no nothing. (OK, that's a lie. You get Jinja templates.) Everything else you have to build or bolt on.
+
+
+
+I've used it for about six months now, and I love it. There's a lot of elbow room with Flask - you can build your app however you like and it can grow organically. Flask gives you the tools and lets you knock yourself out.
+
+
+
+To use a database with Flask, generally you use <a title="SQLAlchemy" href="http://www.sqlalchemy.org/">SQLAlchemy</a> which IMHO is both the biggest strength and the biggest liability of Flask. SQLAlchemy does more than the Django ORM. It's fantastic, full-featured, well-documented...aaaaand it has a learning curve like Half Dome. The left side.
+
+<p style="text-align: center;"><img class="aligncenter" title="Half Dome" src="http://pubs.usgs.gov/gip/dynamic/graphics/Half_Dome.gif" alt="" width="336" height="349"></p>
+
+<p style="text-align: left;">It's <em>not</em> easy to get started if you're a beginner.  Flask also has the problem/benefit of being under rapid development - there are more plugins written every day. (Literally. I wrote a mail plugin just to discover somebody published one two weeks after I finished mine.)</p>
+
+<p style="text-align: left;">However, if you have a group of strong coders, you can make Flask do magic. It's quick and agile once you get a handle on it.</p>
+
+<p style="text-align: left;">In the end, I think both tools are awesome. Are you a beginner, writing a standard website, or need to code fast? Django's your pal. Want flexibility, freedom and room to grow? Flask is pretty awesome too.</p></body></html>
