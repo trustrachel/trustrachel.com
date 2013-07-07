@@ -166,7 +166,7 @@ post_compilers = {
 # relative URL.
 #
 # If you don't need any of these, just set to []
-# REDIRECTIONS = []
+
 
 # Commands to execute to deploy. Can be anything, for example,
 # you may use rsync:
@@ -262,6 +262,12 @@ DISQUS_FORUM = "trustrachel"
 TIMEZONE = 'US/Pacific'
 
 INDEXES_WORDPRESS_STYLE_PAGINATION = True
+
+REDIRECTIONS = [
+    ("posts/2012/11/26/flask-v-django/index.html", "/flask-v-django.html"),
+    ("posts/2011/03/07/3701672590/index.html", "/the-macgyver-kit.html"),
+    ("posts/2011/03/15/3872101713/index.html", "/jam-laziness.html"),
+]
 
 # Color scheme to be used for code blocks. If your theme provide "assets/css/code.css" this
 # is ignored.
