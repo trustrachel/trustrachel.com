@@ -106,8 +106,8 @@ SIDEBAR_LINKS = {
 # 'markdown' is MarkDown
 # 'html' assumes the file is html and just copies it
 post_compilers = {
-    "rest": ('.txt', '.rst'),
-    "markdown": ('.md', '.mdown', '.markdown', '.wp'),
+    "rest": ( '.rst'),
+    "markdown": ('.md', '.mdown', '.markdown', '.wp', '.txt'),
     "textile": ('.textile',),
     "txt2tags": ('.t2t',),
     "bbcode": ('.bb',),

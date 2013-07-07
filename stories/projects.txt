@@ -5,4 +5,19 @@
 .. title: Projects
 .. slug: projects
 
-Write your post here.
+Here's where you can find my work on the web.
+
+Flask-FeatureFlags
+==================
+
+[Find it at Github](https://github.com/trustrachel/Flask-FeatureFlags)
+
+My first open source project. I work on a large Flask app and we needed a way to disable features in production until they were ready to ship. This plugin lets you enable or disable features based on configuration.
+
+It's all my work, start to finish, although it was heavily inspired by [Gargoyle](https://github.com/disqus/gargoyle). 
+
+It's used several projects at LinkedIn, including our app.
+
+Coming up
+=========
+As of July 2013, I'm working on factoring out more of our production application into open source projects. Hopefully the next one will be released by August.
