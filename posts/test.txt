@@ -1,8 +1,0 @@
-.. link: 
-.. description: 
-.. tags: 
-.. date: 2013/06/27 22:29:38
-.. title: Test
-.. slug: test
-
-Write your post here.
